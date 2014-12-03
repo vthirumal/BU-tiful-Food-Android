@@ -1,45 +1,99 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="edu.bu.gog.MainActivity" >
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
-     <item
-        android:id="@+id/BU"
-        android:orderInCategory="1"
-        android:showAsAction="always"
-        android:icon="@drawable/bumascot"
-        android:title="@string/BU" 
-        />
-     <item
-        android:id="@+id/dininghalls"
-        android:orderInCategory="2"
-        android:showAsAction="collapseActionView"
-        android:icon="@drawable/cu"
-        android:title="@string/dininghalls"/>
-         
-     <item
-        android:id="@+id/restaurants"
-        android:orderInCategory="3"
-        android:showAsAction="collapseActionView"
-        android:icon="@drawable/plate"
-        android:title="@string/restaurants" 
-        />
-     <item
-        android:id="@+id/foodtrucks"
-        android:orderInCategory="4"
-        android:showAsAction="collapseActionView"
-         android:icon="@drawable/ft"
-        android:title="@string/foodtrucks" 
-       />
-     <item
-        android:id="@+id/legends"
-        android:orderInCategory="5"
-        android:showAsAction="collapseActionView"
-       android:icon="@drawable/legends"
-        android:title="@string/legends"
-         />
+ xmlns:tools="http://schemas.android.com/tools"
+
+ tools:context="edu.bu.gog.MainActivity" >
+
+
+ <item
+
+ android:id="@+id/action_settings"
+
+ android:orderInCategory="100"
+
+ android:showAsAction="never"
+
+ android:title="@string/action_settings"/>
+
+ <item
+
+ android:id="@+id/BU"
+
+ android:orderInCategory="1"
+
+ android:showAsAction="always"
+
+ android:icon="@drawable/bumascot"
+
+ android:title="@string/BU" 
+
+ />
+
+ <item
+
+ android:id="@+id/ds"
+
+ android:orderInCategory="2"
+
+ android:showAsAction="never|withText|collapseActionView"
+
+ android:icon="@drawable/cu"
+
+ android:title="@string/ds" />
+
+ 
+
+ <item
+
+ android:id="@+id/rs"
+
+ android:orderInCategory="3"
+
+ android:showAsAction="never|withText|collapseActionView"
+
+ android:icon="@drawable/plate"
+
+ android:title="@string/rs" 
+
+ />
+
+ <item
+
+ android:id="@+id/fs"
+
+ android:orderInCategory="4"
+
+ android:showAsAction="never|withText|collapseActionView"
+
+ android:icon="@drawable/ft"
+
+ android:title="@string/fs" 
+
+ />
+ <item
+
+ android:id="@+id/gy"
+
+ android:orderInCategory="5"
+
+ android:showAsAction="never|withText|collapseActionView"
+
+ android:icon="@drawable/legends"
+
+ android:title="@string/gy"
+
+ />
+ <item
+
+ android:id="@+id/ls"
+
+ android:orderInCategory="6"
+
+ android:showAsAction="never|withText|collapseActionView"
+
+ android:icon="@drawable/legends"
+
+ android:title="@string/ls"
+
+ />
 </menu>
