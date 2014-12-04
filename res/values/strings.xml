@@ -3,25 +3,25 @@
 <resources>
 
 
- <string name="app_name">BU-tiful Food</string>
+ <string name="app_name">gog</string>
 
  <string name="hello_world">Hello world!</string>
 
- <string name="action_settings">About</string>
+ <string name="action_settings">Settings</string>
 
  <string name="BU">BU</string>
 
- <string name="ds">Dining Halls</string>
+ <string name="ds">DiningHalls</string>
 
  <string name="rs">Restaurants</string>
 
- <string name="fs">Food Trucks</string>
+ <string name="fs">FoodTrucks</string>
 
  <string name="ls">Legends</string>
- <string name="welcome">Welcome to BU-tiful Food</string>
+ <string name="welcome">Welcome to BU-tiful FOOD app</string>
  <string name="gy">Grocery</string>
  <string name="convenience">Marks locations that accept convenience points</string>
- <string name="cafe">Marks Locations that are Cafes</string>
+ <string name="cafe">Marks locations that are cafes</string>
  <string name="foodtrucks">Marks locations that are food trucks</string>
  <string name="grocery">Marks locations that are grocery stores</string>
  <string name="restaurants">Marks locations that are restaurants</string>
