@@ -114,35 +114,35 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
             case R.id.ds:
              { googleMap.clear();
               Marker TP = googleMap.addMarker(new MarkerOptions().
-                         position(BostonUniversity).title("Boston University"));
+                         position(BostonUniversity).title("BostonUniversity"));
               
              Marker T0 = googleMap.addMarker(new MarkerOptions().
-                        position(WarrenTowers).title("Warren Towers").
-                        snippet("Open M-F 7 am - 9 pm  | 700 Commonwealth Ave").
+                        position(WarrenTowers).title("WarrenTowers").
+                        snippet("Open M-F 7 am - 9 pm  ... 700 Commonwealth Ave").
                         icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              Marker T1 = googleMap.addMarker(new MarkerOptions().
                      position(GSU).title("GSU").
                      snippet("775 Commonwealth Ave").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              Marker T2 = googleMap.addMarker(new MarkerOptions().
-                     position(StarBucks).title("Starbucks").
-                     snippet("Open M-S 7 am - 9 pm  | 500 Commonwealth Ave").
+                     position(StarBucks).title("StarBucks").
+                     snippet("Open M-S 7 am - 9 pm  ... 500 Commonwealth Ave").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              Marker T3 = googleMap.addMarker(new MarkerOptions().
-                     position(CityConvenience).title("City Convenience").
-                     snippet("Open M-S 7 am - 2 am  | 543 Commonwealth Ave").
+                     position(CityConvenience).title("CityConvenience").
+                     snippet("Open M-S 7 am - 2 am  ... 543 Commonwealth Ave").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              Marker T4 = googleMap.addMarker(new MarkerOptions().
-                     position(RaisingCanes).title("Raising Canes").
-                     snippet("Open M-S 11 am - 12 am  | 949 Commonwealth Ave").
+                     position(RaisingCanes).title("RaisingCanes").
+                     snippet("Open M-S 11 am - 12 am  ... 949 Commonwealth Ave").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              Marker T5 = googleMap.addMarker(new MarkerOptions().
-                     position(LawSchoolCafe).title("Law School Cafe").
-                     snippet("Open M-R 8 am - 5 pm | F 8 am - 2 pm | 765 Commonwealth Ave").
+                     position(LawSchoolCafe).title("LawSchoolCafe").
+                     snippet("Open M-R 8 am - 5 pm ... F 8 am - 2 pm ... 765 Commonwealth Ave").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              Marker T6 = googleMap.addMarker(new MarkerOptions().
-                     position(StarBucksSMG).title("Starbucks @ SMG").
-                     snippet("Open M-R 7 am - 4 pm | weekend 12 pm - 6 pm | 543 Commonwealth Ave").
+                     position(StarBucksSMG).title("StarBucks@SMG").
+                     snippet("Open M-R 7 am - 4 pm ... weekend 12 pm - 6 pm ... 543 Commonwealth Ave").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
              return true;}
             case R.id.rs:
@@ -151,7 +151,7 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
                          position(BostonUniversity).title("BostonUniversity"));
              Marker T7 = googleMap.addMarker(new MarkerOptions().
                         position(NoodleSt).title("NoodleSt").
-                        snippet("M-R 11:30 am - 10:30 pm | F-Sa 11:30 am - 11 pm | S 12 pm - 10:30 pm | 627 Commonwealth Ave").
+                        snippet("M-R 11:30 am - 10:30 pm ... F-Sa 11:30 am - 11 pm ... S 12 pm - 10:30 pm ... 627 Commonwealth Ave").
                         icon(BitmapDescriptorFactory.fromResource(R.drawable.dinein_marker)));
              
                 return true; }
@@ -170,23 +170,23 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
                         position(BostonUniversity).title("BostonUniversity"));
             Marker T8 = googleMap.addMarker(new MarkerOptions().
                        position(ShawsWest).title("ShawsWest").
-                       snippet("Open 24/7 | 1065 Commonwealth Ave").
+                       snippet("Open 24/7 ... 1065 Commonwealth Ave").
                        icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
             Marker T9 = googleMap.addMarker(new MarkerOptions().
                     position(HongKong).title("HongKong").
-                    snippet("M-S 9 am - 9 pm | 1095 Commonwealth Ave").
+                    snippet("M-S 9 am - 9 pm ... 1095 Commonwealth Ave").
                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
             Marker Ta = googleMap.addMarker(new MarkerOptions().
                     position(Supermarket88).title("Supermarket 88").
-                    snippet("M-S 9 am - 10:30 pm | 1 Brighton Ave").
+                    snippet("M-S 9 am - 10:30 pm ... 1 Brighton Ave").
                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
             Marker Tb = googleMap.addMarker(new MarkerOptions().
                     position(TurkuazMarket).title("Turkuaz Market").
-                    snippet("M-Sa 9 am - 9 pm | S 10 am - 8 pm | 16 Brighton Ave").
+                    snippet("M-Sa 9 am - 9 pm ... S 10 am - 8 pm ... 16 Brighton Ave").
                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
             Marker Tc = googleMap.addMarker(new MarkerOptions().
                     position(WholeFoodsSouth).title("Whole Foods South").
-                    snippet("8 am - 10 pm | 1026-1028 Beacon st, Brookline").
+                    snippet("8 am - 10 pm ... 1026-1028 Beacon st, Brookline").
                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
          
                return true; } 
