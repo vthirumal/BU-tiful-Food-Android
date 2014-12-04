@@ -21,7 +21,7 @@
  <uses-permission android:name="edu.bu.gogg.permission.MAPS_RECEIVE" />
 
  
-
+ic
  <uses-sdk
 
  android:minSdkVersion="17"
@@ -62,14 +62,12 @@
 
  android:allowBackup="true"
 
- android:icon="@drawable/budining"
+ android:icon="@drawable/ic_launcher"
 
- android:label="gogg">
+ android:label="BU-tiful Food">
 
- <activity
-  android:name = "edu.bu.gogg.SplashScreen"
- android:label="gogg"
- android:theme="@style/AppBaseTheme">
+ <activity android:name = "edu.bu.gogg.SplashScreen">
+     </activity>
 
  <intent-filter>
 

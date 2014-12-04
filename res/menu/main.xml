@@ -15,19 +15,7 @@
 
  android:title="@string/action_settings"/>
 
- <item
 
- android:id="@+id/BU"
-
- android:orderInCategory="1"
-
- android:showAsAction="always"
-
- android:icon="@drawable/bumascot"
-
- android:title="@string/BU" 
-
- />
 
  <item
 
@@ -37,7 +25,7 @@
 
  android:showAsAction="never|withText|collapseActionView"
 
- android:icon="@drawable/cu"
+ android:icon="@drawable/bu_id"
 
  android:title="@string/ds" />
 
@@ -51,7 +39,7 @@
 
  android:showAsAction="never|withText|collapseActionView"
 
- android:icon="@drawable/plate"
+ android:icon="@drawable/restaurant"
 
  android:title="@string/rs" 
 
@@ -65,7 +53,7 @@
 
  android:showAsAction="never|withText|collapseActionView"
 
- android:icon="@drawable/ft"
+ android:icon="@drawable/FoodTruckIcon"
 
  android:title="@string/fs" 
 
@@ -78,22 +66,10 @@
 
  android:showAsAction="never|withText|collapseActionView"
 
- android:icon="@drawable/legends"
+ android:icon="@drawable/cart"
 
  android:title="@string/gy"
 
  />
- <item
 
- android:id="@+id/ls"
-
- android:orderInCategory="6"
-
- android:showAsAction="never|withText|collapseActionView"
-
- android:icon="@drawable/legends"
-
- android:title="@string/ls"
-
- />
 </menu>
