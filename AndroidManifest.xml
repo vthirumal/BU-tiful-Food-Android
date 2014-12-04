@@ -62,7 +62,7 @@
 
  android:allowBackup="true"
 
- android:icon="@drawable/ic_launcher"
+ android:icon="@drawable/budining"
 
  android:label="gogg">
 
