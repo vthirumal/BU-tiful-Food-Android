@@ -16,8 +16,8 @@ public class InfoScreen extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch(item.getItemId()) {
 	    case R.id.action_settings:
-	        Intent intent = new Intent(InfoScreen.this, MainActivity.class);
-	        this.startActivity(intent);
+	        Intent intent = new Intent(MainActivity.this, InfoScreen.class);
+	        MainActivity.this.startActivity(intent);
 	        break;
 	    default:
 	        return super.onOptionsItemSelected(item);
