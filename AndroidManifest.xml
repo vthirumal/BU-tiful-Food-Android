@@ -21,7 +21,7 @@
  <uses-permission android:name="edu.bu.gogg.permission.MAPS_RECEIVE" />
 
  
-ic
+
  <uses-sdk
 
  android:minSdkVersion="17"
@@ -66,8 +66,10 @@ ic
 
  android:label="BU-tiful Food">
 
- <activity android:name = "edu.bu.gogg.SplashScreen">
-     </activity>
+ <activity
+  android:name = "edu.bu.gogg.SplashScreen"
+ android:label="BU-tiful Food"
+ android:theme="@style/AppBaseTheme">
 
  <intent-filter>
 
@@ -80,7 +82,7 @@ ic
  </activity>
  <activity
             android:name="edu.bu.gogg.MainActivity"
-            android:label="gogg" >
+            android:label="BU-tiful Food" >
         </activity>
  
 
