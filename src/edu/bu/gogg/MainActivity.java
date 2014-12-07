@@ -139,7 +139,7 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
     }
 
     
-     //function to load map. If map is not created it will create it for you
+     //Function to load map. If map is not created it will create it for you
     private void initilizeMap() {
         if (googleMap == null) {
             googleMap = ((MapFragment) getFragmentManager().findFragmentById(
