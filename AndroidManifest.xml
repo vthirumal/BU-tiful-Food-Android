@@ -81,15 +81,16 @@
 
  </activity>
  
- <activity 
-     		android:name = "edu.bu.gogg.InfoScreen"
-     		android:label="Info Screen"></activity>
 
  <activity
             android:name="edu.bu.gogg.MainActivity"
             android:label="BU-tiful Food" >
         </activity>
  
+<activity 
+     		android:name = "edu.bu.gogg.InfoScreen"
+     		android:label="Info Screen"></activity>
+
 
  <!-- Goolge API Key -->
 
