@@ -30,7 +30,7 @@ public class Infopage extends Activity {
 		if (id == R.id.action_settings) {
 			return true;
 		}
-		else if(id == R.id.ds || id == R.id.rs || id == R.id.gy || id == R.id.fs)
+		else if(id == R.id.ds || id == R.id.rs || id == R.id.gy || id == R.id.fs || id == R.id.all)
 		{
 			Intent intent = new Intent(this,MainActivity.class );
 			startActivityForResult(intent,0);

@@ -10,14 +10,6 @@ android:title="@string/action_settings"
 />
 
 <item
-android:id="@+id/BU"
-android:orderInCategory="1"
-android:showAsAction="always"
-android:icon="@drawable/bu_id"
-android:title="@string/BU"
-/>
-
-<item
 android:id="@+id/ds"
 android:orderInCategory="2"
 android:showAsAction="never|withText|collapseActionView"
@@ -45,8 +37,14 @@ android:title="@string/fs"
 android:id="@+id/gy"
 android:orderInCategory="5"
 android:showAsAction="never|withText|collapseActionView"
-android:icon="@drawable/legends"
+android:icon="@drawable/cart"
 android:title="@string/gy"
 />
+ <item 
+     android:id="@+id/all" 
+     android:showAsAction="never" 
+     android:title="@string/all" android:orderInCategory="99">
+     
+ </item>
 
 </menu>
