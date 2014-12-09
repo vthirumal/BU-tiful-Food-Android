@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
 
-
- <string name="app_name">BU-tiful Food</string>
-
- <string name="hello_world">Hello world!</string>
-
- <string name="action_settings">Info</string>
-
- <string name="BU">BU</string>
-
- <string name="ds">Dining Halls</string>
-
- <string name="rs">Restaurants</string>
-
- <string name="fs">Food Trucks</string>
-
- <string name="welcome">Welcome to BU-tiful Food</string>
- <string name="gy">Grocery</string>
- <string name="convenience">Marks locations that accept convenience points</string>
- <string name="cafe">Marks locations that are cafes</string>
- <string name="foodtrucks">Marks locations that are food trucks</string>
- <string name="grocery">Marks locations that are grocery stores</string>
- <string name="restaurants">Marks locations that are restaurants</string>
+    <string name="app_name">BU-tiful Food</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Info</string>
+    <string name="BU">BU</string>
+    <string name="ds">BU Affiliated</string>
+    <string name="rs">Restaurants</string>
+    <string name="fs">Food Trucks</string>
+    <string name="welcome">Welcome to BU-tiful Food</string>
+    <string name="gy">Grocery</string>
+    <string name="convenience">Marks locations that accept convenience points</string>
+    <string name="cafe">Marks locations that are cafes</string>
+    <string name="foodtrucks">Marks locations that are food trucks</string>
+    <string name="grocery">Marks locations that are grocery stores</string>
+    <string name="restaurants">Marks locations that are restaurants</string>
+    <string name="title_activity_infopage">Infopage</string>
+    <string name="all">All Locations</string>
 
 </resources>

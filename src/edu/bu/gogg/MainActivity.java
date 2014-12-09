@@ -29,6 +29,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.widget.Toast;
 import android.content.Context;
+import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -91,15 +92,15 @@ static final LatLng OttosWest = new LatLng(42.3519638,-71.1181866);
 static final LatLng YardHouse = new LatLng(42.345354, -71.100196);
 static final LatLng NudPod = new LatLng(42.349832, -71.107247);
 
+static final LatLng BlueStateCoffeeWest = new LatLng(42.351848, -71.119108);
+static final LatLng BrownSugarCafe = new LatLng(42.352279, -71.121848);
+
 /****** Food Trucks ******/
 static final LatLng foodtruck_eastcampus_1 = new LatLng(42.349235, -71.100972);
 static final LatLng foodtruck_eastcampus_2 = new LatLng(42.348918, -71.104104);
 static final LatLng foodtruck_westcampus_1 = new LatLng(42.350925, -71.113191);
 static final LatLng foodtruck_westcampus_2 = new LatLng(42.353237, -71.118146);
 
-/****** Coffee Shops ******/
-static final LatLng BlueStateCoffeeWest = new LatLng(42.351848, -71.119108);
-static final LatLng BrownSugarCafe = new LatLng(42.352279, -71.121848);
 
 /****** Grocery Stores ******/
 static final LatLng ShawsWest = new LatLng(42.352697, -71.123563 );
@@ -155,8 +156,8 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
             // center of map, test marker
             /****** test marker ******/
             
-            Marker TP = googleMap.addMarker(new MarkerOptions().
-            position(BostonUniversity).title("Test"));
+            //Marker TP = googleMap.addMarker(new MarkerOptions().
+            //position(BostonUniversity).title("Test"));
             
             /****** end of test marker ******/
             
@@ -288,6 +289,12 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
             Marker R34 = googleMap.addMarker(new MarkerOptions().
                     position(NudPod).title("Nud Pob Thai Cuisine").
                     icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+            Marker R35 = googleMap.addMarker(new MarkerOptions().
+                    position(BlueStateCoffeeWest).title("Blue State Coffee").
+                    icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+            Marker R36 = googleMap.addMarker(new MarkerOptions().
+                    position(BrownSugarCafe).title("Brown Sugar Cafe").
+                    icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
             
             /****** Food Trucks ******/
             Marker FT1 = googleMap.addMarker(new MarkerOptions().
@@ -348,11 +355,11 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
 			
 		/****** test marker ******/
 			
-		if (marker.getTitle().equals("Test"))
-		{
-			TextView information = (TextView)infowindow.findViewById(R.id.Information);
-			information.setText("now we can have\n" + "more than two\n" + "lines of text here");
-		}
+		//if (marker.getTitle().equals("Test"))
+		//{
+			//TextView information = (TextView)infowindow.findViewById(R.id.Information);
+			//information.setText("now we can have\n" + "more than two\n" + "lines of text here");
+		//}
 			
 		/******	end of test	******/
 			
@@ -472,7 +479,7 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
 		{
 			TextView information = (TextView)infowindow.findViewById(R.id.Information);
 			information.setText("665 Commonwealth Ave.\n" + "Boston, MA 02215\n" + "(617) 236-7884\n" + 
-					"Hours: [Still need to find hours]\n" + "Accepts Cash and Credit Cards");
+					"Hours: 11AM - 3PM\n" + "Accepts Cash and Credit Cards");
 		}
 		
 		if (marker.getTitle().equals("Insomnia Cookies"))
@@ -690,6 +697,22 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
 					"Delivery And Takeout Avaiable");
 		}
 		
+		if (marker.getTitle().equals("Blue State Coffee"))
+		{
+			TextView information = (TextView)infowindow.findViewById(R.id.Information);
+			information.setText("957 Commonwealth Ave.\n" + "Boston, MA 02215\n" + "(617) 254-0929\n" + 
+					"Hours: Mon-Fri: 7AM - 8PM, Sat-Sun: 8AM - 8PM\n" + "Accepts Cash and Credit Cards");
+		}
+		
+		if (marker.getTitle().equals("Brown Sugar Cafe"))
+		{
+			TextView information = (TextView)infowindow.findViewById(R.id.Information);
+			information.setText("1033 Commonwealth Ave.\n" + "Boston, MA 02215\n" + "(617) 787-4242\n" + 
+					"Hours: Mon-Thu: 10AM - 10PM, Fri: 10AM - 11PM, Sat: 12PM - 11PM, Sun: 12PM - 10PM\n" + 
+					"Accepts Cash and Credit Cards\n" + "Delivery and Takeout Available");
+		}
+		
+		
 		/****** Food Trucks ******/
 		if (marker.getTitle().equals("Morse Auditorium Food Truck"))
 		{
@@ -722,13 +745,6 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
 					"Mon-Fri: Fanboy\n" + "\n" + "Accepts Cash, Credit Cards, and Convenience Points");
 		}
 		
-		/****** Coffee Shops ******/
-		if (marker.getTitle().equals("Blue State Coffee")) // no marker yet
-		{
-			TextView information = (TextView)infowindow.findViewById(R.id.Information);
-			information.setText("957 Commonwealth Ave.\n" + "Boston, MA 02215\n" + "(617) 254-0929\n" + 
-					"Hours: Mon-Fri: 7AM - 8PM, Sat-Sun: 8AM - 8PM\n" + "Accepts Cash and Credit Cards");
-		}
 		
 		/****** Grocery Stores ******/
 		if (marker.getTitle().equals("Shaws"))
@@ -788,9 +804,6 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
                // return true;}
             case R.id.ds:
              { googleMap.clear();
-              //Marker TP = googleMap.addMarker(new MarkerOptions().
-                         //position(BostonUniversity).title("BostonUniversity"));
-              
              Marker T0 = googleMap.addMarker(new MarkerOptions().
             		 position(WarrenTowers).title("Warren Towers").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));     		 
@@ -816,8 +829,6 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
              
             case R.id.rs:
              {googleMap.clear();
-              //Marker TP = googleMap.addMarker(new MarkerOptions().
-                         //position(BostonUniversity).title("BostonUniversity"));
              Marker R1 = googleMap.addMarker(new MarkerOptions().
                      position(NoodleSt).title("Noodle Street").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
@@ -920,12 +931,16 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
              Marker R34 = googleMap.addMarker(new MarkerOptions().
                      position(NudPod).title("Nud Pob Thai Cuisine").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+             Marker R35 = googleMap.addMarker(new MarkerOptions().
+                     position(BlueStateCoffeeWest).title("Blue State Coffee").
+                     icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+             Marker R36 = googleMap.addMarker(new MarkerOptions().
+                     position(BrownSugarCafe).title("Brown Sugar Cafe").
+                     icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
              
                 return true; }
             case R.id.fs:
              {googleMap.clear();
-              //Marker TP = googleMap.addMarker(new MarkerOptions().
-                         //position(BostonUniversity).title("BostonUniversity"));
              Marker FT1 = googleMap.addMarker(new MarkerOptions().
                      position(foodtruck_eastcampus_1).title("Morse Auditorium Food Truck").
                      icon(BitmapDescriptorFactory.fromResource(R.drawable.truck_marker)));
@@ -943,8 +958,6 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
             case R.id.gy:
             {
             	googleMap.clear();
-             //Marker TP = googleMap.addMarker(new MarkerOptions().
-                        //position(BostonUniversity).title("BostonUniversity"));
             Marker G1 = googleMap.addMarker(new MarkerOptions().
                        position(ShawsWest).title("Shaws").
                        icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
@@ -963,21 +976,180 @@ static final LatLng WholeFoodsSouth = new LatLng(42.345897,-71.108193 );
          
                return true; } 
             
-            //case R.id.ls:
-               //googleMap = null;
-               
-               //LayoutInflater inflater = getLayoutInflater();
-               //View view = inflater.inflate(R.layout.cust_toast_layout,
-                                              //(ViewGroup) findViewById(R.id.relativeLayout1));
-
-               //Toast toast = new Toast(this);
-               //toast.setView(view);
-              
-               //toast.show();
-              // Toast.makeText(getApplicationContext(),
-            		//   setView(view) , Toast.LENGTH_LONG)
-                  //       .show();
-                //return true; 
+            case R.id.action_settings:
+            	Intent intent = new Intent(this,Infopage.class );
+            	startActivityForResult(intent,0);
+                return true; 
+                
+            case R.id.all:
+            	googleMap.clear();
+            	
+            	/****** Convenience Points ******/
+                Marker T0 = googleMap.addMarker(new MarkerOptions().
+                		position(WarrenTowers).title("Warren Towers").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));     		 
+                Marker T1 = googleMap.addMarker(new MarkerOptions().
+                		position(GSU).title("Geogre Sherman Union").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
+                Marker T2 = googleMap.addMarker(new MarkerOptions().
+                		position(StarBucks).title("StarBucks").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
+                Marker T3 = googleMap.addMarker(new MarkerOptions().
+                		position(CityConvenience).title("City Convenience").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
+                Marker T4 = googleMap.addMarker(new MarkerOptions().
+                		position(RaisingCanes).title("Raising Canes").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
+                Marker T5 = googleMap.addMarker(new MarkerOptions().
+                		position(LawSchoolCafe).title("Law School Cafe").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
+                Marker T6 = googleMap.addMarker(new MarkerOptions().
+                		position(StarBucksSMG).title("StarBucks @ SMG").
+                		icon(BitmapDescriptorFactory.fromResource(R.drawable.bu_marker)));
+                
+                /****** Restaurants ******/
+                Marker R1 = googleMap.addMarker(new MarkerOptions().
+                        position(NoodleSt).title("Noodle Street").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R2 = googleMap.addMarker(new MarkerOptions().
+                        position(Cornwalls).title("Cornwalls").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R3 = googleMap.addMarker(new MarkerOptions().
+                        position(Bertuccis).title("Bertuccis").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R4 = googleMap.addMarker(new MarkerOptions().
+                        position(McDonKenmore).title("McDonalds").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R5 = googleMap.addMarker(new MarkerOptions().
+                        position(UNOsKen).title("UNO Chicago Grill").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R6 = googleMap.addMarker(new MarkerOptions().
+                        position(PopeyesKenm).title("Popeyes").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R7 = googleMap.addMarker(new MarkerOptions().
+                        position(ScooziKenm).title("Scoozi").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R8 = googleMap.addMarker(new MarkerOptions().
+                        position(CampusTrolley).title("Campus Trolley").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R9 = googleMap.addMarker(new MarkerOptions().
+                        position(InsomniaCookies).title("Insomnia Cookies").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R10 = googleMap.addMarker(new MarkerOptions().
+                        position(BeijingCafe).title("Beijing Cafe").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R11 = googleMap.addMarker(new MarkerOptions().
+                        position(BostonHouseofPizza).title("Boston House of Pizza").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R12 = googleMap.addMarker(new MarkerOptions().
+                        position(ChipotleWest).title("Chipotle").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R13 = googleMap.addMarker(new MarkerOptions().
+                        position(PaneraWest).title("Panera Bread").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R14 = googleMap.addMarker(new MarkerOptions().
+                        position(PanRomaWest).title("Pan Roma Pizza").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R15 = googleMap.addMarker(new MarkerOptions().
+                        position(SunsetCantinaWest).title("Sunset Cantina").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R16 = googleMap.addMarker(new MarkerOptions().
+                        position(BurgerfiWest).title("Burgerfi").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R17 = googleMap.addMarker(new MarkerOptions().
+                        position(TsPubWest).title("T’s Pub").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R18 = googleMap.addMarker(new MarkerOptions().
+                        position(VictoriaSeafoodWest).title("Victoria Seafood").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R19 = googleMap.addMarker(new MarkerOptions().
+                        position(TAnthonysWest).title("T Anthony’s Pizzeria").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R20 = googleMap.addMarker(new MarkerOptions().
+                        position(QuansWest).title("Quan’s Kitchen Chinese Food").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R21 = googleMap.addMarker(new MarkerOptions().
+                        position(AngoraCafeWest).title("Angora Cafe").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R22 = googleMap.addMarker(new MarkerOptions().
+                        position(KayugaWest).title("Kayuga").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R23 = googleMap.addMarker(new MarkerOptions().
+                        position(BostonPizzaExpress).title("Boston Pizza Express").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R24 = googleMap.addMarker(new MarkerOptions().
+                        position(RoastBeastWest).title("Roast Beast").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R25 = googleMap.addMarker(new MarkerOptions().
+                        position(CookinCafeWest).title("Cookin Cafe and Grill").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R26 = googleMap.addMarker(new MarkerOptions().
+                        position(SarayWest).title("Saray Restaurant").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R27 = googleMap.addMarker(new MarkerOptions().
+                        position(CrispyCrepesSouth).title("Crispy Crepes").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R28 = googleMap.addMarker(new MarkerOptions().
+                        position(MeiMeiSouth).title("Mei Mei").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R29 = googleMap.addMarker(new MarkerOptions().
+                        position(ShabuZenWest).title("Shabu-Zen").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R30 = googleMap.addMarker(new MarkerOptions().
+                        position(BonChonWest).title("BonChon Chicken").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R31 = googleMap.addMarker(new MarkerOptions().
+                        position(KajuTofuWest).title("Kaju Tofu").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R32 = googleMap.addMarker(new MarkerOptions().
+                        position(OttosWest).title("Otto Pizza").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R33 = googleMap.addMarker(new MarkerOptions().
+                        position(YardHouse).title("Yard House").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R34 = googleMap.addMarker(new MarkerOptions().
+                        position(NudPod).title("Nud Pob Thai Cuisine").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R35 = googleMap.addMarker(new MarkerOptions().
+                        position(BlueStateCoffeeWest).title("Blue State Coffee").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                Marker R36 = googleMap.addMarker(new MarkerOptions().
+                        position(BrownSugarCafe).title("Brown Sugar Cafe").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.restaurant_marker)));
+                
+                /****** Food Trucks ******/
+                Marker FT1 = googleMap.addMarker(new MarkerOptions().
+                        position(foodtruck_eastcampus_1).title("Morse Auditorium Food Truck").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.truck_marker)));
+                Marker FT2 = googleMap.addMarker(new MarkerOptions().
+                        position(foodtruck_eastcampus_2).title("Cummington Street Food Truck").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.truck_marker)));
+                Marker FT3 = googleMap.addMarker(new MarkerOptions().
+                        position(foodtruck_westcampus_1).title("West Campus Food Truck").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.truck_marker)));
+                Marker FT5 = googleMap.addMarker(new MarkerOptions().
+                        position(foodtruck_westcampus_2).title("Agganis Way Food Truck").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.truck_marker)));
+                
+                /****** Grocery ******/
+                Marker G1 = googleMap.addMarker(new MarkerOptions().
+                        position(ShawsWest).title("Shaws").
+                        icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
+                Marker G2 = googleMap.addMarker(new MarkerOptions().
+                     position(HongKong).title("Hong Kong Supermarket").
+                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
+                Marker G3 = googleMap.addMarker(new MarkerOptions().
+                     position(Supermarket88).title("Supermarket 88").
+                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
+                Marker G4 = googleMap.addMarker(new MarkerOptions().
+                     position(TurkuazMarket).title("Turkuaz Market").
+                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
+                Marker G5 = googleMap.addMarker(new MarkerOptions().
+                     position(WholeFoodsSouth).title("Whole Foods").
+                     icon(BitmapDescriptorFactory.fromResource(R.drawable.grocery_marker)));
+            	
+            	return true;
+            	
             default:
                 return super.onOptionsItemSelected(item);
         }

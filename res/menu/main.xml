@@ -53,7 +53,7 @@
 
  android:showAsAction="never|withText|collapseActionView"
 
- android:icon="@drawable/FoodTruckIcon"
+ android:icon="@drawable/foodtruckicon"
 
  android:title="@string/fs" 
 
@@ -71,5 +71,9 @@
  android:title="@string/gy"
 
  />
+ <item 
+     android:id="@+id/all" 
+     android:showAsAction="never" 
+     android:title="@string/all" android:orderInCategory="99"></item>
 
 </menu>
